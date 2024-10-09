@@ -1,0 +1,39 @@
+h1 {
+    margin-top: 0px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: green;
+}
+
+h2 {
+    text-align: center;
+}
+
+.intro {
+    width: 60%;
+    margin-left: 5%;
+    flex-wrap: wrap;
+
+}
+
+p {
+    background-color: gray;
+}
+
+.languageImg {
+    width: 300px;
+    height: 300px;
+}
+
+.head {
+    display: flex;
+}
+
+body {
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: black;
+    color: #FFFFFF;
+
+}
