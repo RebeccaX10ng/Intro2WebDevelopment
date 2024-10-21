@@ -1,23 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(46, 46, 46);
+    color: #FFFFFF;
+    font-family: "PT Serif", serif;
+}
+
 h1 {
-    margin-top: 0px;
+    margin-top: 0;
     text-align: center;
     color: #FFFFFF;
     background-color: green;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
 }
 
 h2 {
     text-align: center;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h3 {
+    font-family: "PT Serif", serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+p {
+    line-height: 1.6;
 }
 
 .intro {
     width: 60%;
     margin-left: 5%;
+    margin-right: 5%;
     flex-wrap: wrap;
-
 }
 
-p {
-    background-color: gray;
+.intro-centered {
+
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-wrap: wrap;
+    line-height: 2;
 }
 
 .languageImg {
@@ -27,13 +62,31 @@ p {
 
 .head {
     display: flex;
+    line-height: 1.6;
 }
 
-body {
-    margin-top: 0%;
-    margin-left: 0%;
-    margin-right: 0%;
-    background-color: black;
-    color: #FFFFFF;
+.main {
+    background-color: rgb(26, 26, 26);
+    margin-left: 20%;
+    margin-right: 20%;
+    min-height: 100vh;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
 
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+
+.language {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.653);
+    white-space: nowrap;
 }

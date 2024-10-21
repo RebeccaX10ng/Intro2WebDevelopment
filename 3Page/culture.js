@@ -1,0 +1,147 @@
+const languages = [
+    "Kulturë",
+    "ባህሊ",
+    "ثقافة",
+    "Մշակույթ",
+    "Mədəniyyət",
+    "Kultura",
+    "Культура",
+    "সংস্কৃতি",
+    "Kultura",
+    "Култура",
+    "Cultura",
+    "Kultura",
+    "文化",
+    "文化",
+    "Kultura",
+    "Kultura",
+    "Kultur",
+    "Cultuur",
+    "Culture",
+    "Kulturo",
+    "Kultuur",
+    "Kultura",
+    "Kulttuuri",
+    "Culture",
+    "Cultura",
+    "კულტურა",
+    "Kultur",
+    "Πολιτισμός",
+    "સંસ્કૃતિ",
+    "Kilti",
+    "Al'adu",
+    "תרבות",
+    "संस्कृति",
+    "Kab lis kev cai",
+    "Kultúra",
+    "Menning",
+    "Omenala",
+    "Budaya",
+    "Cultúr",
+    "Cultura",
+    "文化",
+    "ಸಂಸ್ಕೃತಿ",
+    "Мәдениет",
+    "វប្បធម៌",
+    "문화",
+    "Çand",
+    "Маданият",
+    "ວັດທະນະທຳ",
+    "Kultūra",
+    "Kultūra",
+    "Kultur",
+    "Култура",
+    "Kolontsaina",
+    "Budaya",
+    "സംസ്കാരം",
+    "Kultura",
+    "Tikanga",
+    "संस्कृती",
+    "Соёл",
+    "ယဉ်ကျေးမှု",
+    "संस्कृति",
+    "Kultur",
+    "ସଂସ୍କୃତି",
+    "کلتور",
+    "فرهنگ",
+    "Kultura",
+    "Cultura",
+    "ਸੰਸਕਾਰ",
+    "Cultură",
+    "Культура",
+    "Aganu'u",
+    "Cultar",
+    "Култура",
+    "Setso",
+    "Tsika",
+    "ثقافت",
+    "සංස්කෘතිය",
+    "Kultúra",
+    "Kultura",
+    "Dhaqanka",
+    "Isiko",
+    "Isiko",
+    "Cultura",
+    "Kabudayaan",
+    "Utamaduni",
+    "Kultur",
+    "Фарҳанг",
+    "கலாச்சாரம்",
+    "Мәдәният",
+    "సంస్కృతి",
+    "วัฒนธรรม",
+    "Kültür",
+    "Medeniýet",
+    "Культура",
+    "ثقافت",
+    "مەدەنىيەت",
+    "Madaniyat",
+    "Văn hóa",
+    "Diwylliant",
+    "Kultuer",
+    "קולטור",
+    "Asa",
+    "Kultuur",
+    "Budaya",
+    "Культура",
+    "Ulwimi",
+    "ᏗᏂᏲᏟᏗ",
+    "Agwafò",
+    "Uutalaaleli",
+    "Asa",
+    "ಸಂಸ್ಕೃತಿ",
+    "Ullkaka",
+    "Kastom",
+    "Aγbadu",
+    "संस्कृती",
+    "Cultura",
+    "Cwlture",
+    "Kultura",
+    "Donkili",
+    "Arte"
+];
+const background = document.getElementById('background');
+
+
+function generateRandomLanguage() {
+    const language = document.createElement('div');
+    language.classList.add('language');
+
+    const randomIndex = Math.floor(Math.random() * languages.length);
+    language.textContent = languages[randomIndex];
+
+    const fontSize = Math.floor(Math.random() * 40) + 20;
+    language.style.fontSize = `${fontSize}px`;
+
+    const x = Math.floor(Math.random() * window.innerWidth);
+    const y = Math.floor(Math.random() * window.innerHeight);
+
+    language.style.left = `${x}px`;
+    language.style.top = `${y}px`;
+
+    background.appendChild(language);
+}
+
+for (let i = 0; i < 120; i++) {
+    generateRandomLanguage();
+}
