@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a:visited {
+    color: inherit;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -28,16 +32,25 @@ h2 {
     margin: 0;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 2%;
 }
 
 h3 {
     font-family: "PT Serif", serif;
     font-weight: 200;
     font-style: italic;
+    line-height: 1.6;
 }
+
+
 
 p {
     line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 5%;
 }
 
 .intro {
@@ -55,9 +68,14 @@ p {
     line-height: 2;
 }
 
+.centered {
+    background-color: rgb(46, 46, 46);
+}
+
 .languageImg {
-    width: 300px;
+    width: 370px;
     height: 300px;
+    margin-right: 2%;
 }
 
 .head {
@@ -70,9 +88,53 @@ p {
     margin-left: 20%;
     margin-right: 20%;
     min-height: 100vh;
-    line-height: 1.6;
+    line-height: 1.8;
     box-sizing: border-box;
+
 }
+
+.linkBox {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.linkBox:visited {
+    color: inherit;
+}
+
+.linkBox:hover {
+    cursor: pointer;
+}
+
+.paragraph {
+    background-color: rgb(46, 46, 46);
+    margin-top: 5%;
+}
+
+.thoughts {
+    text-align: center;
+    margin-top: 5%;
+    font-style: italic;
+    padding: 10px 20px;
+}
+
+.textNImg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(46, 46, 46);
+}
+
+.textNImg p {
+    margin-right: 20px;
+}
+
+.wikiImg {
+    width: 100px;
+    height: auto;
+}
+
 
 #background {
     position: absolute;
@@ -89,4 +151,38 @@ p {
     position: absolute;
     color: rgba(255, 255, 255, 0.653);
     white-space: nowrap;
+}
+
+.form-container {
+    margin: 20px;
+}
+
+#largeInput {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    font-size: 16px;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.upload-btn {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-btn:hover {
+    background-color: rgb(55, 91, 0);
 }
