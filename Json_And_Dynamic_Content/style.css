@@ -1,0 +1,89 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    width: calc(100% - 20vw);
+    margin: 0 auto;
+}
+
+.textbox {
+    margin: 0;
+    padding: 2em;
+    border-radius: 1em;
+    background-color: #88bfce;
+}
+
+.textbox h2 {
+    margin-top: 0;
+}
+
+.textbox img {
+    width: 20em;
+    height: 20em;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+
+
+.textbox ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.textbox li {
+    margin-bottom: 10px;
+}
+
+.textbox li span {
+    display: inline;
+}
+
+.textbox li a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.textbox li a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    margin: 1vw 10vw 1vw 10vw;
+}
+
+#title {
+    font-style: italic;
+    margin: 0 10vw;
+}
+
+@media (max-width: 800px) {
+    #container {
+        grid-template-columns: 1fr;
+        gap: 10vw;
+        width: calc(100% - 20vw);
+        margin: 0 auto;
+    }
+}
+
+/* got this code from:https://codepen.io/P1N2O/pen/pyBNzX */
+body {
+    background: linear-gradient(-60deg, #211372, #cd8686, #d4d465, #770000);
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
