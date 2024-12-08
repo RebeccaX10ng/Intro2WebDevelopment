@@ -1,0 +1,94 @@
+body {
+    background: #272727;
+    font-family: sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hex-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.hex-row:first-child {
+    margin-top: 0;
+}
+
+.hex-grid {
+    display: inline-block;
+    margin: 0 auto;
+    transform: translate(-16em, -13.6em);
+}
+
+.hex-row {
+    display: flex;
+    margin-bottom: -4.5%;
+}
+
+.hex-row:nth-child(even) {
+    transform: translateX(11.5em);
+}
+
+.hex {
+    width: 22em;
+    height: 25.41em;
+    margin: 0.5em;
+    flex: 0 0 auto;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.hex img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+
+.base-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hex:hover .hover-image {
+    opacity: 1;
+}
+
+.paragraph {
+    text-align: center;
+    margin-top: 45%;
+    font-size: 2em;
+    font-family: oswald;
+    color: aliceblue;
+}
+
+a {
+    color: aliceblue;
+}
